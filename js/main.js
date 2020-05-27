@@ -1,13 +1,21 @@
 var mySwiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,
-  spaceBetween: 10,
+
+  speed: 400,
   loop: true,
   navigation: {
     nextEl: '.arrow',
   },
+  slidesPerView: 1,
+  freeMode: true,
+  freeModeMomentum: true,
+  freeModeSticky: true,
+
   breakpoints: {
     540: {
-      slidesPerView: 2
+      slidesPerView: 2,
+      freeMode: true,
+      freeModeMomentum: true,
+      freeModeSticky: true,
     }
   }
 });
